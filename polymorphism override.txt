@@ -1,0 +1,40 @@
+using System;
+namespace constructor
+{
+    class car
+    {
+        public virtual void mode()
+        {
+            Console.WriteLine("hii");
+        }
+    }
+    
+     class B : car
+    {
+        public override void mode()
+        {
+            Console.WriteLine("bye");
+        }
+    }
+    class C:car
+    {
+        public override void mode()
+        {
+            Console.WriteLine("tc");
+        }
+    }
+    class program
+    {
+        static void Main(string[] args)
+        {
+            car aobj = new car();
+            car Bobj = new B();
+            car Cobj = new C();
+
+            aobj.mode();
+            Bobj.mode();
+            Cobj.mode();
+        }
+    }
+    
+}
